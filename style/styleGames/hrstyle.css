@@ -1,0 +1,259 @@
+:root{
+    --fuente-primaria:'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--fuente-primaria);
+    background: #1b1726;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url(../media/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.logo-content:hover a{
+    color: #ff5a2c;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ff5a2c;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu label{
+    display: none;
+}
+
+.game{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: -70px;
+    color: #fff;
+}
+
+.game-img{
+    width: 600px;
+    margin-right: 35px;
+}
+
+.game-img img{
+    box-shadow: 0 0 10px #534281;
+}
+
+.game-txt{
+    height: 100%;
+}
+
+.game-txt h3{
+    color: #ff5a2c;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.txt-info{
+    font-size: 18px;
+}
+
+.txt-info ul li{
+    margin-bottom: 5px;
+}
+
+.description-primary p{
+    color: e0e0e0;
+    font-size: 16px;
+}
+
+.btn-2 {
+    border: 2px solid #ff5a2c;
+    border-radius: 20px;
+    font-size: 17px;
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.btn-2 {
+    padding: 5px 25px;
+    background: #ff5a2c;
+    margin-right: 0;
+}
+
+.btn-2:hover {
+    border: 2px solid #fff;
+    background: #fff;
+    color: #ff5a2c;
+    box-shadow: 0 0 15px #ff5a2c;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+/* Galeria */
+.galery{
+    margin-top: 25px;
+}
+
+.galery .contenedor h2{
+    color: #ff5a2c;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.img-galeria:hover{
+    transform: scale(1.03,1.03);
+    box-shadow: 0 0 15px #ff5a2c;
+    transition: .3s;
+    -webkit-transform: scale(1.03,1.03);
+    -moz-transform: scale(1.03,1.03);
+    -ms-transform: scale(1.03,1.03);
+    -o-transform: scale(1.03,1.03);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2 ease-in-out;
+    -webkit-transition: transform .2 ease-in-out;
+    -moz-transition: transform .2 ease-in-out;
+    -ms-transition: transform .2 ease-in-out;
+    -o-transition: transform .2 ease-in-out;
+    -webkit-transform: translate(100%);
+    -moz-transform: translate(100%);
+    -ms-transform: translate(100%);
+    -o-transform: translate(100%);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s ;
+}
+
+.showImagen{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
